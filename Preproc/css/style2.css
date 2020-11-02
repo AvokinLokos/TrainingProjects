@@ -1,0 +1,213 @@
+.blocks, .section_card_text, .footer_text, .footer-cr, .section_banner_text, .footer {
+  text-align: justify;
+  color: #bbbeaa; }
+
+.rounding, .section_card, .section_banner {
+  border-radius: 5px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #21232e; }
+
+header {
+  height: 600px;
+  padding-left: 190px;
+  background-image: url("../img/m-h-night.jpg");
+  background-position: center;
+  border-radius: 0px 0px 450px 0px / 0px 0px 250px 0px; }
+
+.landing-logo img {
+  margin: 10px;
+  float: left; }
+.landing-logo p {
+  margin: 0px;
+  padding-top: 15px;
+  font-size: large;
+  font-weight: 600; }
+.landing-logo span {
+  padding-left: 5px;
+  font-size: xx-small;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.header-wrap {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  width: 650px; }
+  .header-wrap .header_heading {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1; }
+    .header-wrap .header_heading::before {
+      content: "";
+      position: relative;
+      display: block;
+      z-index: -1;
+      background: #ff4e33;
+      width: 250px;
+      height: 45px;
+      left: 0;
+      top: 145px; }
+  .header-wrap .header_text {
+    font-size: small;
+    white-space: pre-line; }
+  .header-wrap .header_button {
+    background-color: #e3ac00;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 115px;
+    margin-top: 40px;
+    margin-right: 110px; }
+  .header-wrap .header a {
+    color: white;
+    font-weight: 600; }
+
+.section {
+  font-family: "Source Sans Pro", sans-serif; }
+  .section_text {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    width: 500px; }
+    .section_text::before {
+      content: "";
+      position: relative;
+      display: block;
+      z-index: -1;
+      background: #ff4e33;
+      width: 135px;
+      height: 40px;
+      left: 256px;
+      top: 33px; }
+  .section_card {
+    height: 250px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #3b3f50;
+    width: 900px; }
+    .section_card_wrap div:nth-child(2) img {
+      width: 320px;
+      margin-right: 0px; }
+    .section_card_wrap div:nth-child(2) div {
+      margin-left: -10px; }
+    .section_card_wrap div:nth-child(2) a {
+      margin-left: 250px; }
+    .section_card_wrap div:nth-child(3) img {
+      width: 350px; }
+    .section_card_wrap div:nth-child(3) div {
+      margin-left: 20px; }
+    .section_card_wrap div:nth-child(3) a {
+      margin-left: 230px; }
+    .section_card_img {
+      margin: 15px;
+      height: 220px;
+      border-radius: 5px;
+      float: left; }
+    .section_card_heading {
+      text-align: center;
+      padding-top: 50px;
+      font-size: larger;
+      font-weight: 600; }
+    .section_card_text, .footer_text, .footer-cr {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 440px;
+      padding-right: 85px;
+      font-size: smaller;
+      font-weight: 100; }
+    .section_card a {
+      font-size: 13px;
+      color: #bbbeaa;
+      font-weight: 100; }
+
+.section_banner {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  height: 110px;
+  width: 950px;
+  z-index: 1;
+  margin-bottom: -50px;
+  background: linear-gradient(to right, #e3ac00, #932e51); }
+  .section_banner_button {
+    background-color: #e3ac00;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 115px;
+    margin-top: 40px;
+    margin-right: 110px;
+    margin: 0px;
+    margin-top: 35px; }
+  .section_banner_text {
+    font-size: 13px; }
+    .section_banner_text_wrap {
+      width: 500px;
+      margin-left: 150px;
+      margin-right: 40px;
+      float: left;
+      position: relative;
+      z-index: 1; }
+      .section_banner_text_wrap::after {
+        content: "";
+        position: relative;
+        display: block;
+        z-index: -1;
+        background: #ff4e33;
+        width: 55px;
+        height: 40px;
+        left: 100px;
+        top: -80px; }
+  .section_banner_heading {
+    margin: 0px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px; }
+
+.footer {
+  position: relative;
+  z-index: -1;
+  padding-top: 100px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #3b3f50;
+  padding-bottom: 20px; }
+  .footer_logo {
+    width: 200px;
+    display: inline-block;
+    margin-left: 190px;
+    margin-right: 125px; }
+  .footer_wrap {
+    display: inline-block; }
+  .footer_text {
+    font-size: 11px;
+    text-align: left;
+    display: inline-block;
+    padding: 0px;
+    width: 230px;
+    margin-left: 125px;
+    margin-right: 160px; }
+  .footer-cr {
+    padding: 0px;
+    margin-left: 160px;
+    margin-right: 100px;
+    font-size: 12px;
+    vertical-align: middle; }

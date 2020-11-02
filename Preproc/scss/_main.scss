@@ -1,0 +1,272 @@
+// Write your styles here
+
+@mixin for-button($bgColor,$textColor, $fontWeight, $Border, $BorderRadius, $Hei, $Wi, $MT, $MR){
+    background-color: $bgColor;
+    color: $textColor;
+    font-weight: $fontWeight;
+    border: $Border;
+    border-radius: $BorderRadius;
+    height: $Hei;
+    width: $Wi;
+    margin-top: $MT;
+    margin-right: $MR;
+}
+
+@mixin for-a($textColor, $fontWeight){
+    color: $textColor;
+    font-weight: $fontWeight;
+}
+
+.blocks{
+    text-align: justify;
+    color: rgb(187,190,170);
+}
+
+.rounding{
+    border-radius: 5px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $bodyBG;
+}
+
+header {
+    height: 600px;
+    padding-left: 190px;
+    background-image: url($image1);
+    background-position: center;
+    border-radius: 0px 0px 450px 0px / 0px 0px 250px 0px;
+}
+
+.landing-logo {
+    img {
+        margin: 10px;
+        float: left;
+    }
+    p {
+        
+        margin: 0px;
+        padding-top: 15px;
+        font-size: large;
+        font-weight: 600;
+    }
+    span {
+        padding-left: 5px;
+        font-size: xx-small;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+.header-wrap {
+    font-family: map-get($fonts, primary);
+    color: $FontColor;
+    width: 650px;
+    .header{
+        &_heading {
+        font-weight: bold;
+        font-size: 60px;
+        margin-bottom: 0px;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: "";
+            position: relative;
+            display: block;
+            z-index: -1;
+            background: $Highlight;
+            width: 250px;
+            height: 45px;
+            left:0;
+            top:145px;
+        }
+        }
+        &_text {
+        font-size: small;
+        white-space: pre-line;
+        }
+        &_button {
+        @include for-button($HeaderButtonColor, white, 600, none, 5px, 40px, 115px, 40px, 110px);
+        }
+    a {
+        @include for-a(white, 600);
+    }
+}
+}
+
+.section{
+    font-family:map-get($fonts, primary);
+    &_text{
+        color: $FontColor;
+        text-align:center;
+        font-weight: 600;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+        width: 500px;
+        &::before{
+            content: "";
+            position: relative;
+            display: block;
+            z-index: -1;
+            background: $Highlight;
+            width: 135px;
+            height: 40px;
+            left:256px;
+            top:33px;
+        }
+    }
+    &_card{
+        @extend .rounding;
+        height: 250px;
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding:0px;
+        background-color: $BGSection;
+        width:900px;
+        &_wrap{
+            & div:nth-child(2){
+                & img{
+                width: 320px;
+                margin-right: 0px;
+                }
+                & div{
+                    margin-left: -10px;
+                }
+                & a{
+                    margin-left: 250px;
+                }
+            }
+            & div:nth-child(3){
+                & img{
+                width: 350px;
+                }
+                & div{
+                    margin-left: 20px;
+                }
+                & a{
+                    margin-left: 230px;
+                }
+            }
+        }
+        &_img{
+            margin: 15px;
+            height: 220px;
+            border-radius: 5px;
+            float: left;
+        }
+        &_heading{
+            text-align: center;
+            padding-top: 50px;
+            font-size: larger;
+            font-weight: 600;
+        }
+        &_text{
+            @extend .blocks;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 440px;
+            padding-right: 85px;
+            font-size: smaller;
+            font-weight: 100;
+        }
+        a{
+            font-size: 13px;
+            @include for-a(rgb(187,190,170), 100);
+        }
+    }
+}
+
+.section_banner{ 
+    font-family:map-get($fonts, primary);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 110px;
+    @extend .rounding;
+    width: 950px;
+    z-index: 1;
+    margin-bottom: -50px;
+    background: linear-gradient(to right, $FirstColorForGradient, $SecondColorForGradient);
+    &_button{
+        @include for-button($HeaderButtonColor, white, 600, none, 5px, 40px, 115px, 40px, 110px);
+        margin: 0px;
+        margin-top: 35px;
+    }
+    &_text{
+        @extend .blocks;
+        font-size: 13px;
+        &_wrap{
+            width: 500px;
+            margin-left: 150px;
+            margin-right: 40px;
+            float: left;
+            
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: "";
+                position: relative;
+                display: block;
+                z-index: -1;
+                background: $Highlight;
+                width: 55px;
+                height: 40px;
+                left:100px;
+                top:-80px;
+            }
+        }
+    }
+    &_heading{
+        margin:0px;
+        margin-top: 20px;
+        color: $FontColor;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
+.footer{
+    position: relative;
+    z-index: -1;
+    padding-top: 100px;
+    font-family: map-get($map: $fonts, $key: primary);
+    @extend .blocks;
+    background-color: $BGSection;
+    padding-bottom: 20px;
+    &_logo{
+        width: 200px;
+        display: inline-block;
+        margin-left: 190px;
+        margin-right: 125px;
+    }
+    &_wrap{    
+    display: inline-block;
+    }
+    &_text{
+        font-size: 11px;
+        text-align: left;
+        display: inline-block;
+        @extend .section_card_text;
+        padding: 0px;
+        width: 230px;
+        margin-left: 125px;
+        margin-right: 160px;
+    }
+    &-cr{
+        @extend .section_card_text;
+        padding: 0px;
+        margin-left: 160px;
+        margin-right: 100px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+}
+

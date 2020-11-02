@@ -1,0 +1,52 @@
+/* TODO: your styles goes here*/
+
+
+#root{
+    padding: 20px 20px 20px 60px;
+    margin-top: 50px;
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	cursor: pointer;
+}
+li{
+	padding: 0.3em;
+}
+.material-icons{
+	vertical-align: sub;
+}
+.folder{
+	color: rgba(237, 188, 11);
+}
+.file{
+	color: rgb(176, 176, 176);
+}
+ul>li>*{
+	display: none;
+}
+.context-menu{
+	border: 1px solid grey;
+	position: absolute;
+	color: black;
+    padding: 10px;
+    background-color: white;
+}
+.context-menu li:hover{
+	background-color:rgb(244, 244, 245);
+}
+input{
+	box-sizing: border-box;
+	border: 0.5px solid lightblue;
+	height: 25px;
+}

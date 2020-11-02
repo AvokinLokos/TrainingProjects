@@ -1,0 +1,203 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 900px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.headings, .header_heading, .footer_header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600; }
+
+.header {
+  background: url(../img/header-bg.png) no-repeat;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
+  background-color: #0b013c;
+  background-size: auto 100vh;
+  padding-right: 20px; }
+  .header_wrap {
+    position: absolute;
+    margin-left: 250px; }
+  .header_button {
+    margin-top: 4%;
+    background-color: #0b013c;
+    border-color: white;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 21%; }
+    .header_button_submit {
+      margin-left: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      height: 48px;
+      width: 120px;
+      font-size: 17px;
+      background-color: #f8cb8a;
+      border: transparent; }
+      .header_button_submit:hover {
+        background-color: #f6bb66; }
+  .header_heading {
+    font-weight: 600;
+    font-size: 90px;
+    margin-bottom: 5.5%; }
+    .header_heading_2 {
+      font-size: 25px;
+      margin-bottom: 4.4%; }
+  .header_text {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 5.5%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .header input {
+    height: 45px;
+    font-size: 16px;
+    width: 360px;
+    color: #e4e4e4; }
+
+main hr {
+  height: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90px;
+  background: #f8cb8a;
+  border: 0px; }
+
+.pre-footer {
+  color: white;
+  background-color: #0b013c;
+  height: 600px;
+  background-image: url(../img/space-bg.png); }
+  .pre-footer hr {
+    height: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90px;
+    background: #f8cb8a;
+    border: 0px; }
+
+.section {
+  padding-top: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px; }
+  .section_1 {
+    padding-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 300px; }
+    .section_1 hr {
+      margin-bottom: 20px; }
+    .section_1_header {
+      font-size: 25px;
+      font-weight: 200;
+      margin-bottom: 0px; }
+      .section_1_header_2 {
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 25px;
+        color: #0b013c; }
+    .section_1_text_content {
+      font-style: italic;
+      color: #808080;
+      white-space: pre-wrap; }
+  .section_2 {
+    padding-top: 100px;
+    height: 600px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto; }
+    .section_2_header {
+      font-size: 25px;
+      font-weight: 200;
+      margin-bottom: 0px; }
+      .section_2_header_2 {
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 25px;
+        color: #0b013c; }
+    .section_2_text_content {
+      font-style: italic;
+      color: #808080;
+      font-size: 15px;
+      white-space: pre-wrap; }
+    .section_2_wrap {
+      width: 330px;
+      float: right; }
+    .section_2 img {
+      width: 750px;
+      height: 500px;
+      float: left; }
+    .section_2 hr {
+      margin-left: 0px;
+      margin-bottom: 20px; }
+  .section_3 {
+    height: 550px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto; }
+    .section_3_left-block {
+      float: left;
+      width: 500px; }
+      .section_3_left-block p {
+        white-space: pre-wrap;
+        font-style: italic;
+        padding-left: 20px;
+        font-size: 15px; }
+      .section_3_left-block img {
+        width: 500px; }
+    .section_3_right-block {
+      float: right;
+      width: 500px; }
+      .section_3_right-block p {
+        white-space: pre-wrap;
+        font-style: italic;
+        padding-left: 20px;
+        font-size: 15px; }
+      .section_3_right-block img {
+        width: 500px; }
+  .section_header {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 0px; }
+    .section_header_2 {
+      font-weight: 600;
+      font-size: 50px;
+      margin-bottom: 25px; }
+  .section_text {
+    font-style: italic;
+    white-space: pre-wrap; }
+
+.footer {
+  height: 400px;
+  color: white;
+  background: url(../img/footer-bg.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .footer_content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px; }
+  .footer_wrap {
+    float: left;
+    width: 400px;
+    padding-top: 150px; }
+  .footer_header {
+    font-size: 30px;
+    width: 400px;
+    margin-right: 0px; }
+  .footer_text {
+    width: 400px;
+    margin-right: 0px;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .footer_text a {
+      color: white;
+      text-decoration: none; }
+  .footer img {
+    margin-top: 85px;
+    margin-left: 220px; }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 15 - JS DOM Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="task1">
+    <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+    <table>
+      <tr>
+        <td onclick="firstCol(this)" class="firstColumn">Cell</td>
+
+        <td onclick="yellowColor(this)">Cell</td>
+
+        <td onclick="yellowColor(this)">Cell</td>
+      </tr>
+      <tr>
+        <td onclick="firstCol(this)" class="firstColumn">Cell</td>
+
+        <td onclick="yellowColor(this)">Cell</td>
+
+        <td onclick="specCell()">Special <br> Cell</td>
+      </tr>
+      <tr>
+        <td onclick="firstCol(this)" class="firstColumn">Cell</td>
+
+        <td onclick="yellowColor(this)">Cell</td>
+
+        <td onclick="yellowColor(this)">Cell</td>
+      </tr>
+      
+    </table>
+  </div>
+
+  <div id="task2">
+    <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+    <div id ="invalidData" class="block"> 
+      Type number does not follow format<br>+380*********
+    </div>
+    <div id ="validData" class="block"> 
+      Data was successfully sent
+    </div>
+    <div id="input">
+      <input type="tel" placeholder="Type phone number in format +380*********" class="phone">
+      <button onclick="toSend(this)">Send</button>
+    </div>
+  </div>
+
+  <div id="task3">
+    <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+    <div id="court">
+    <img src="assets/ball.png" id="ball" alt="ball">
+    <div id="B" class="basket" onclick="showTeam(this)"></div>
+    <div id="A" class="basket" onclick="showTeam(this)"></div>
+  </div>
+  </div>
+  <div class="score">Team A: 0</div>
+  <div class="score">Team B: 0</div>
+  <br>
+  <div class="congrat"></div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
